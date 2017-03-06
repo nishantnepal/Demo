@@ -1,0 +1,5 @@
+C:\Projects\Demo\Core\Demo.Core.Dtos\bin\Debug\Demo.Core.Dtos.dll
+C:\Projects\Demo\Core\Demo.Core.Dtos\bin\Debug\Demo.Core.Dtos.pdb
+C:\Projects\Demo\Core\Demo.Core.Dtos\obj\Debug\Demo.Core.Dtos.dll
+C:\Projects\Demo\Core\Demo.Core.Dtos\obj\Debug\Demo.Core.Dtos.pdb
+C:\Projects\Demo\Core\Demo.Core.Dtos\obj\Debug\Demo.Core.Dtos.csprojResolveAssemblyReference.cache

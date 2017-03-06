@@ -1,0 +1,2361 @@
+2017-03-02 14:17:07.249 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:17:07.309 -05:00 [Information] Request finished in 82.939ms 200 
+2017-03-02 14:17:13.680 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195  
+2017-03-02 14:17:14.182 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:17:14.771 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:17:15.045 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" in 1049.7689ms
+2017-03-02 14:17:15.049 -05:00 [Information] Request finished in 1367.4927ms 200 application/json; charset=utf-8
+2017-03-02 14:17:38.709 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/Orders  
+2017-03-02 14:17:38.712 -05:00 [Information] Request finished in 2.6222ms 404 
+2017-03-02 14:17:47.509 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195  
+2017-03-02 14:17:47.523 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:17:47.536 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:17:47.537 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" in 26.2052ms
+2017-03-02 14:17:47.538 -05:00 [Information] Request finished in 29.4339ms 200 application/json; charset=utf-8
+2017-03-02 14:18:50.642 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195  
+2017-03-02 14:18:50.642 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:18:50.711 -05:00 [Information] Request finished in 118.7642ms 200 
+2017-03-02 14:18:51.196 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:18:51.813 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:18:52.008 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" in 1016.8952ms
+2017-03-02 14:18:52.011 -05:00 [Information] Request finished in 1427.4359ms 200 application/json; charset=utf-8
+2017-03-02 14:18:55.202 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:18:55.210 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:18:55.220 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:18:55 PM -05:00
+
+2017-03-02 14:18:55.236 -05:00 [Information] SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[OrderDate] AS [OrderDate], 
+    [Extent1].[OrderStatus] AS [OrderStatus], 
+    [Extent1].[CustomerId] AS [CustomerId]
+    FROM [dbo].[Orders] AS [Extent1]
+    WHERE [Extent1].[CustomerId] = @p__linq__0
+2017-03-02 14:18:55.236 -05:00 [Information] 
+
+2017-03-02 14:18:55.237 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:18:55.238 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:18:55 PM -05:00
+
+2017-03-02 14:18:55.240 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 14:18:55.240 -05:00 [Information] 
+
+2017-03-02 14:18:55.241 -05:00 [Information] Closed connection at 3/2/2017 2:18:55 PM -05:00
+
+2017-03-02 14:18:55.243 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:18:55.262 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 57.1846ms
+2017-03-02 14:18:55.264 -05:00 [Information] Request finished in 62.641ms 200 application/json; charset=utf-8
+2017-03-02 14:20:23.225 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:20:23.225 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:20:23.288 -05:00 [Information] Request finished in 112.5092ms 200 
+2017-03-02 14:20:23.762 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:20:23.975 -05:00 [Information] Opened connection at 3/2/2017 2:20:23 PM -05:00
+
+2017-03-02 14:20:23.977 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:20:23.977 -05:00 [Information] 
+
+2017-03-02 14:20:23.978 -05:00 [Information] -- Executing at 3/2/2017 2:20:23 PM -05:00
+
+2017-03-02 14:20:24.000 -05:00 [Information] -- Completed in 19 ms with result: 5
+
+2017-03-02 14:20:24.001 -05:00 [Information] 
+
+2017-03-02 14:20:24.001 -05:00 [Information] Closed connection at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.065 -05:00 [Information] Opened connection at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.134 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:20:24.135 -05:00 [Information] 
+
+2017-03-02 14:20:24.137 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:20:24.138 -05:00 [Information] -- Executing at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.143 -05:00 [Information] -- Completed in 4 ms with result: SqlDataReader
+
+2017-03-02 14:20:24.144 -05:00 [Information] 
+
+2017-03-02 14:20:24.152 -05:00 [Information] Closed connection at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.156 -05:00 [Information] Opened connection at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.166 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:20:24.167 -05:00 [Information] 
+
+2017-03-02 14:20:24.168 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:20:24.169 -05:00 [Information] -- Executing at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.171 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 14:20:24.171 -05:00 [Information] 
+
+2017-03-02 14:20:24.172 -05:00 [Information] Closed connection at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.228 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.293 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[FirstName] AS [FirstName], 
+    [Project1].[LastName] AS [LastName], 
+    [Project1].[EmailAddress] AS [EmailAddress], 
+    [Project1].[Phone] AS [Phone], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id2] AS [Id2], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[FirstName] AS [FirstName], 
+        [Extent2].[LastName] AS [LastName], 
+        [Extent2].[EmailAddress] AS [EmailAddress], 
+        [Extent2].[Phone] AS [Phone], 
+        [Extent3].[Id] AS [Id2], 
+        [Extent3].[OrderId] AS [OrderId], 
+        [Extent3].[ProductId] AS [ProductId], 
+        [Extent3].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent3].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM   [dbo].[Orders] AS [Extent1]
+        INNER JOIN [dbo].[Customers] AS [Extent2] ON [Extent1].[CustomerId] = [Extent2].[Id]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent3] ON [Extent1].[Id] = [Extent3].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[Id1] ASC, [Project1].[C1] ASC
+2017-03-02 14:20:24.295 -05:00 [Information] 
+
+2017-03-02 14:20:24.296 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:20:24.296 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.310 -05:00 [Information] -- Completed in 13 ms with result: SqlDataReader
+
+2017-03-02 14:20:24.311 -05:00 [Information] 
+
+2017-03-02 14:20:24.323 -05:00 [Information] Closed connection at 3/2/2017 2:20:24 PM -05:00
+
+2017-03-02 14:20:24.355 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:20:24.600 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 1015.0488ms
+2017-03-02 14:20:24.604 -05:00 [Information] Request finished in 1434.8048ms 200 application/json; charset=utf-8
+2017-03-02 14:41:05.197 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:41:05.263 -05:00 [Information] Request finished in 94.7852ms 200 
+2017-03-02 14:41:12.652 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:41:13.185 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:41:13.388 -05:00 [Information] Opened connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.389 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:41:13.389 -05:00 [Information] 
+
+2017-03-02 14:41:13.390 -05:00 [Information] -- Executing at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.412 -05:00 [Information] -- Completed in 19 ms with result: 5
+
+2017-03-02 14:41:13.412 -05:00 [Information] 
+
+2017-03-02 14:41:13.413 -05:00 [Information] Closed connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.475 -05:00 [Information] Opened connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.543 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:41:13.544 -05:00 [Information] 
+
+2017-03-02 14:41:13.545 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:41:13.545 -05:00 [Information] -- Executing at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.550 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 14:41:13.551 -05:00 [Information] 
+
+2017-03-02 14:41:13.558 -05:00 [Information] Closed connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.563 -05:00 [Information] Opened connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.575 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:41:13.576 -05:00 [Information] 
+
+2017-03-02 14:41:13.577 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:41:13.577 -05:00 [Information] -- Executing at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.579 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 14:41:13.580 -05:00 [Information] 
+
+2017-03-02 14:41:13.581 -05:00 [Information] Closed connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.639 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.688 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:41:13.689 -05:00 [Information] 
+
+2017-03-02 14:41:13.689 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:41:13.690 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.699 -05:00 [Information] -- Completed in 9 ms with result: SqlDataReader
+
+2017-03-02 14:41:13.700 -05:00 [Information] 
+
+2017-03-02 14:41:13.710 -05:00 [Information] Closed connection at 3/2/2017 2:41:13 PM -05:00
+
+2017-03-02 14:41:13.825 -05:00 [Error] Failed to retrieve orders for customer id 195
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Demo.Core.Models.Order, Demo.Core.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Demo.Core.Dtos.OrderModel, Demo.Core.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Order -> OrderModel
+Demo.Core.Models.Order -> Demo.Core.Dtos.OrderModel
+
+Type Map configuration:
+Order -> OrderModel
+Demo.Core.Models.Order -> Demo.Core.Dtos.OrderModel
+
+Property:
+OrderLines ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+OrderLine -> OrderLine
+Demo.Core.Models.OrderLine -> Demo.Core.Dtos.OrderLine
+   at lambda_method(Closure , OrderLine , OrderLine , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Order , OrderModel , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Order , OrderModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at Demo.Api.Web.Controllers.OrdersController.<Get>d__4.MoveNext() in C:\Projects\Demo\Api\Demo.Api.Web\Controllers\OrdersController.cs:line 34
+2017-03-02 14:41:13.862 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:41:13.922 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 937.0697ms
+2017-03-02 14:41:13.926 -05:00 [Information] Request finished in 1274.2249ms 500 text/plain; charset=utf-8
+2017-03-02 14:43:15.795 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:43:15.855 -05:00 [Information] Request finished in 82.1287ms 200 
+2017-03-02 14:43:15.913 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:43:16.450 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:43:16.655 -05:00 [Information] Opened connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.656 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:43:16.657 -05:00 [Information] 
+
+2017-03-02 14:43:16.658 -05:00 [Information] -- Executing at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.678 -05:00 [Information] -- Completed in 19 ms with result: 5
+
+2017-03-02 14:43:16.679 -05:00 [Information] 
+
+2017-03-02 14:43:16.680 -05:00 [Information] Closed connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.750 -05:00 [Information] Opened connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.830 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:43:16.831 -05:00 [Information] 
+
+2017-03-02 14:43:16.832 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:43:16.833 -05:00 [Information] -- Executing at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.836 -05:00 [Information] -- Completed in 2 ms with result: SqlDataReader
+
+2017-03-02 14:43:16.838 -05:00 [Information] 
+
+2017-03-02 14:43:16.845 -05:00 [Information] Closed connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.849 -05:00 [Information] Opened connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.858 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:43:16.859 -05:00 [Information] 
+
+2017-03-02 14:43:16.860 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:43:16.861 -05:00 [Information] -- Executing at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.862 -05:00 [Information] -- Completed in 0 ms with result: SqlDataReader
+
+2017-03-02 14:43:16.862 -05:00 [Information] 
+
+2017-03-02 14:43:16.863 -05:00 [Information] Closed connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.921 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.970 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:43:16.971 -05:00 [Information] 
+
+2017-03-02 14:43:16.972 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:43:16.973 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:16.980 -05:00 [Information] -- Completed in 6 ms with result: SqlDataReader
+
+2017-03-02 14:43:16.981 -05:00 [Information] 
+
+2017-03-02 14:43:16.991 -05:00 [Information] Closed connection at 3/2/2017 2:43:16 PM -05:00
+
+2017-03-02 14:43:17.104 -05:00 [Error] Failed to retrieve orders for customer id 195
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Demo.Core.Models.Order, Demo.Core.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Demo.Core.Dtos.OrderModel, Demo.Core.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Order -> OrderModel
+Demo.Core.Models.Order -> Demo.Core.Dtos.OrderModel
+
+Type Map configuration:
+Order -> OrderModel
+Demo.Core.Models.Order -> Demo.Core.Dtos.OrderModel
+
+Property:
+OrderLines ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+OrderLine -> OrderLineModel
+Demo.Core.Models.OrderLine -> Demo.Core.Dtos.OrderLineModel
+
+Type Map configuration:
+OrderLine -> OrderLineModel
+Demo.Core.Models.OrderLine -> Demo.Core.Dtos.OrderLineModel
+
+Property:
+Product ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Product -> Product
+Demo.Core.Models.Product -> Demo.Core.Dtos.Product
+   at lambda_method(Closure , Product , Product , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , OrderLine , OrderLineModel , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , OrderLine , OrderLineModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Order , OrderModel , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Order , OrderModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at Demo.Api.Web.Controllers.OrdersController.<Get>d__4.MoveNext() in C:\Projects\Demo\Api\Demo.Api.Web\Controllers\OrdersController.cs:line 34
+2017-03-02 14:43:17.139 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:43:17.173 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 927.6067ms
+2017-03-02 14:43:17.178 -05:00 [Information] Request finished in 1264.5048ms 500 text/plain; charset=utf-8
+2017-03-02 14:43:39.875 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:43:39.887 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:43:39.889 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:43:39 PM -05:00
+
+2017-03-02 14:43:39.892 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:43:39.893 -05:00 [Information] 
+
+2017-03-02 14:43:39.893 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:43:39.894 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:43:39 PM -05:00
+
+2017-03-02 14:43:39.899 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 14:43:39.899 -05:00 [Information] 
+
+2017-03-02 14:43:39.901 -05:00 [Information] Closed connection at 3/2/2017 2:43:39 PM -05:00
+
+2017-03-02 14:45:34.472 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:45:34.536 -05:00 [Information] Request finished in 89.5538ms 200 
+2017-03-02 14:45:36.845 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:45:37.326 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:45:37.527 -05:00 [Information] Opened connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.529 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:45:37.529 -05:00 [Information] 
+
+2017-03-02 14:45:37.530 -05:00 [Information] -- Executing at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.551 -05:00 [Information] -- Completed in 19 ms with result: 5
+
+2017-03-02 14:45:37.551 -05:00 [Information] 
+
+2017-03-02 14:45:37.552 -05:00 [Information] Closed connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.618 -05:00 [Information] Opened connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.695 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:45:37.696 -05:00 [Information] 
+
+2017-03-02 14:45:37.696 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:45:37.697 -05:00 [Information] -- Executing at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.701 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 14:45:37.702 -05:00 [Information] 
+
+2017-03-02 14:45:37.709 -05:00 [Information] Closed connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.713 -05:00 [Information] Opened connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.723 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:45:37.724 -05:00 [Information] 
+
+2017-03-02 14:45:37.725 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:45:37.725 -05:00 [Information] -- Executing at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.727 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 14:45:37.727 -05:00 [Information] 
+
+2017-03-02 14:45:37.728 -05:00 [Information] Closed connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.799 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.843 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:45:37.844 -05:00 [Information] 
+
+2017-03-02 14:45:37.844 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:45:37.845 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:45:37.853 -05:00 [Information] -- Completed in 7 ms with result: SqlDataReader
+
+2017-03-02 14:45:37.853 -05:00 [Information] 
+
+2017-03-02 14:45:37.861 -05:00 [Information] Closed connection at 3/2/2017 2:45:37 PM -05:00
+
+2017-03-02 14:46:22.799 -05:00 [Error] Failed to retrieve orders for customer id 195
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Demo.Core.Models.Order, Demo.Core.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Demo.Core.Dtos.OrderModel, Demo.Core.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Order -> OrderModel
+Demo.Core.Models.Order -> Demo.Core.Dtos.OrderModel
+
+Type Map configuration:
+Order -> OrderModel
+Demo.Core.Models.Order -> Demo.Core.Dtos.OrderModel
+
+Property:
+OrderLines ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+OrderLine -> OrderLineModel
+Demo.Core.Models.OrderLine -> Demo.Core.Dtos.OrderLineModel
+
+Type Map configuration:
+OrderLine -> OrderLineModel
+Demo.Core.Models.OrderLine -> Demo.Core.Dtos.OrderLineModel
+
+Property:
+Product ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Product -> Product
+Demo.Core.Models.Product -> Demo.Core.Dtos.Product
+   at lambda_method(Closure , Product , Product , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , OrderLine , OrderLineModel , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , OrderLine , OrderLineModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Order , OrderModel , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Order , OrderModel , ResolutionContext )
+   at AutoMapper.ResolutionContext.Map[TSource,TDestination](TSource source, TDestination destination)
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , Object , ResolutionContext )
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at Demo.Api.Web.Controllers.OrdersController.<Get>d__4.MoveNext() in C:\Projects\Demo\Api\Demo.Api.Web\Controllers\OrdersController.cs:line 34
+2017-03-02 14:46:22.836 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:46:22.870 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 45719.5593ms
+2017-03-02 14:46:22.875 -05:00 [Information] Request finished in 46029.5672ms 500 text/plain; charset=utf-8
+2017-03-02 14:46:44.175 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:8088/api/customers application/json 130
+2017-03-02 14:46:44.406 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.CustomersController.Post (Demo.Api.Web)" with arguments (["Demo.Core.Dtos.CustomerModel"]) - ModelState is Valid
+2017-03-02 14:46:44.415 -05:00 [Information] New customer created : CustomerModel { Url: null, Id: 0, FirstName: "Nishan", LastName: "Nepal", FullName: null, EmailAddress: "nish.nep2@stracke.us", Phone: "989.658.4271 x6445", ActiveOrders: 0, Addresses: null }
+2017-03-02 14:46:44.435 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:46:44 PM -05:00
+
+2017-03-02 14:46:44.437 -05:00 [Information] Started transaction at 3/2/2017 2:46:44 PM -05:00
+
+2017-03-02 14:46:44.448 -05:00 [Information] INSERT [dbo].[Customers]([FirstName], [LastName], [EmailAddress], [Phone])
+VALUES (@0, @1, @2, @3)
+SELECT [Id]
+FROM [dbo].[Customers]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 14:46:44.449 -05:00 [Information] 
+
+2017-03-02 14:46:44.449 -05:00 [Information] -- @0: 'Nishan' (Type = String, Size = -1)
+
+2017-03-02 14:46:44.450 -05:00 [Information] -- @1: 'Nepal' (Type = String, Size = -1)
+
+2017-03-02 14:46:44.451 -05:00 [Information] -- @2: 'nish.nep2@stracke.us' (Type = String, Size = -1)
+
+2017-03-02 14:46:44.451 -05:00 [Information] -- @3: '989.658.4271 x6445' (Type = String, Size = -1)
+
+2017-03-02 14:46:44.452 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:46:44 PM -05:00
+
+2017-03-02 14:46:44.456 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 14:46:44.457 -05:00 [Information] 
+
+2017-03-02 14:46:44.460 -05:00 [Information] Committed transaction at 3/2/2017 2:46:44 PM -05:00
+
+2017-03-02 14:46:44.461 -05:00 [Information] Closed connection at 3/2/2017 2:46:44 PM -05:00
+
+2017-03-02 14:46:44.480 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:46:44.547 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.CustomersController.Post (Demo.Api.Web)" in 369.3688ms
+2017-03-02 14:46:44.548 -05:00 [Information] Request finished in 373.1092ms 201 application/json; charset=utf-8
+2017-03-02 14:46:48.681 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers  
+2017-03-02 14:46:48.684 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" with arguments (null) - ModelState is Valid
+2017-03-02 14:47:38.320 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:47:38.333 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.CustomersController.Get (Demo.Api.Web)" in 49643.4926ms
+2017-03-02 14:47:38.336 -05:00 [Information] Request finished in 49653.9671ms 200 application/json; charset=utf-8
+2017-03-02 14:47:43.146 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:47:43.149 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:47:43.151 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:47:43 PM -05:00
+
+2017-03-02 14:47:43.152 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:47:43.153 -05:00 [Information] 
+
+2017-03-02 14:47:43.154 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:47:43.155 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:47:43 PM -05:00
+
+2017-03-02 14:47:43.170 -05:00 [Information] -- Completed in 13 ms with result: SqlDataReader
+
+2017-03-02 14:47:43.171 -05:00 [Information] 
+
+2017-03-02 14:47:43.173 -05:00 [Information] Closed connection at 3/2/2017 2:47:43 PM -05:00
+
+2017-03-02 14:49:23.228 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:49:23.299 -05:00 [Information] Request finished in 94.2449ms 200 
+2017-03-02 14:49:38.140 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:49:38.629 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:49:38.846 -05:00 [Information] Opened connection at 3/2/2017 2:49:38 PM -05:00
+
+2017-03-02 14:49:38.847 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:49:38.848 -05:00 [Information] 
+
+2017-03-02 14:49:38.848 -05:00 [Information] -- Executing at 3/2/2017 2:49:38 PM -05:00
+
+2017-03-02 14:49:38.869 -05:00 [Information] -- Completed in 18 ms with result: 5
+
+2017-03-02 14:49:38.869 -05:00 [Information] 
+
+2017-03-02 14:49:38.870 -05:00 [Information] Closed connection at 3/2/2017 2:49:38 PM -05:00
+
+2017-03-02 14:49:38.940 -05:00 [Information] Opened connection at 3/2/2017 2:49:38 PM -05:00
+
+2017-03-02 14:49:39.011 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:49:39.012 -05:00 [Information] 
+
+2017-03-02 14:49:39.012 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:49:39.013 -05:00 [Information] -- Executing at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.017 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 14:49:39.018 -05:00 [Information] 
+
+2017-03-02 14:49:39.024 -05:00 [Information] Closed connection at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.027 -05:00 [Information] Opened connection at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.037 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:49:39.037 -05:00 [Information] 
+
+2017-03-02 14:49:39.038 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:49:39.038 -05:00 [Information] -- Executing at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.040 -05:00 [Information] -- Completed in 0 ms with result: SqlDataReader
+
+2017-03-02 14:49:39.040 -05:00 [Information] 
+
+2017-03-02 14:49:39.041 -05:00 [Information] Closed connection at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.103 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.150 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:49:39.150 -05:00 [Information] 
+
+2017-03-02 14:49:39.151 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:49:39.152 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:49:39.161 -05:00 [Information] -- Completed in 7 ms with result: SqlDataReader
+
+2017-03-02 14:49:39.161 -05:00 [Information] 
+
+2017-03-02 14:49:39.169 -05:00 [Information] Closed connection at 3/2/2017 2:49:39 PM -05:00
+
+2017-03-02 14:54:00.546 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:54:00.610 -05:00 [Information] Request finished in 92.7376ms 200 
+2017-03-02 14:54:00.999 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:54:01.610 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:54:01.820 -05:00 [Information] Opened connection at 3/2/2017 2:54:01 PM -05:00
+
+2017-03-02 14:54:01.821 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:54:01.821 -05:00 [Information] 
+
+2017-03-02 14:54:01.822 -05:00 [Information] -- Executing at 3/2/2017 2:54:01 PM -05:00
+
+2017-03-02 14:54:01.845 -05:00 [Information] -- Completed in 21 ms with result: 5
+
+2017-03-02 14:54:01.846 -05:00 [Information] 
+
+2017-03-02 14:54:01.847 -05:00 [Information] Closed connection at 3/2/2017 2:54:01 PM -05:00
+
+2017-03-02 14:54:01.915 -05:00 [Information] Opened connection at 3/2/2017 2:54:01 PM -05:00
+
+2017-03-02 14:54:01.990 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:54:01.991 -05:00 [Information] 
+
+2017-03-02 14:54:01.991 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:54:01.992 -05:00 [Information] -- Executing at 3/2/2017 2:54:01 PM -05:00
+
+2017-03-02 14:54:01.996 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 14:54:01.997 -05:00 [Information] 
+
+2017-03-02 14:54:02.004 -05:00 [Information] Closed connection at 3/2/2017 2:54:02 PM -05:00
+
+2017-03-02 14:54:02.008 -05:00 [Information] Opened connection at 3/2/2017 2:54:02 PM -05:00
+
+2017-03-02 14:54:02.018 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:54:02.019 -05:00 [Information] 
+
+2017-03-02 14:54:02.019 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:54:02.020 -05:00 [Information] -- Executing at 3/2/2017 2:54:02 PM -05:00
+
+2017-03-02 14:54:02.021 -05:00 [Information] -- Completed in 0 ms with result: SqlDataReader
+
+2017-03-02 14:54:02.021 -05:00 [Information] 
+
+2017-03-02 14:54:02.022 -05:00 [Information] Closed connection at 3/2/2017 2:54:02 PM -05:00
+
+2017-03-02 14:54:02.084 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:54:02 PM -05:00
+
+2017-03-02 14:54:02.089 -05:00 [Information] Closed connection at 3/2/2017 2:54:02 PM -05:00
+
+2017-03-02 14:54:02.126 -05:00 [Error] Failed to retrieve orders for customer id 195
+System.InvalidOperationException: A specified Include path is not valid. The EntityType 'Demo.Core.Repositories.Order' does not declare a navigation property with the name 'OrderLines'.
+   at System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter.ConvertSpanPath(SpanPathInfo parentInfo, List`1 navPropNames, Int32 pos)
+   at System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter..ctor(DbCommandTree tree, DbExpression toRewrite, Span span, AliasGenerator aliasGenerator)
+   at System.Data.Entity.Core.Objects.Internal.ObjectSpanRewriter.TryRewrite(DbQueryCommandTree tree, Span span, MergeOption mergeOption, AliasGenerator aliasGenerator, DbExpression& newQuery, SpanIndex& spanInfo)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   at System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassc.<GetResultsAsync>b__a()
+   at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<GetResultsAsync>d__e.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Internal.LazyAsyncEnumerator`1.<FirstMoveNextAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.<ForEachAsync>d__5`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Demo.Api.Web.Controllers.OrdersController.<Get>d__4.MoveNext() in C:\Projects\Demo\Api\Demo.Api.Web\Controllers\OrdersController.cs:line 33
+2017-03-02 14:54:02.162 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:54:02.214 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 810.8678ms
+2017-03-02 14:54:02.218 -05:00 [Information] Request finished in 1220.5963ms 500 text/plain; charset=utf-8
+2017-03-02 14:54:40.753 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:54:40.755 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:54:40.820 -05:00 [Information] Request finished in 123.393ms 200 
+2017-03-02 14:54:41.327 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:54:42.566 -05:00 [Information] Opened connection at 3/2/2017 2:54:42 PM -05:00
+
+2017-03-02 14:54:42.567 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:54:42.567 -05:00 [Information] 
+
+2017-03-02 14:54:42.568 -05:00 [Information] -- Executing at 3/2/2017 2:54:42 PM -05:00
+
+2017-03-02 14:54:43.676 -05:00 [Information] -- Completed in 1107 ms with result: 5
+
+2017-03-02 14:54:43.676 -05:00 [Information] 
+
+2017-03-02 14:54:43.677 -05:00 [Information] Closed connection at 3/2/2017 2:54:43 PM -05:00
+
+2017-03-02 14:54:43.772 -05:00 [Information] Opened connection at 3/2/2017 2:54:43 PM -05:00
+
+2017-03-02 14:54:43.844 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:54:43.845 -05:00 [Information] 
+
+2017-03-02 14:54:43.846 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:54:43.846 -05:00 [Information] -- Executing at 3/2/2017 2:54:43 PM -05:00
+
+2017-03-02 14:54:44.062 -05:00 [Information] -- Completed in 214 ms with result: SqlDataReader
+
+2017-03-02 14:54:44.063 -05:00 [Information] 
+
+2017-03-02 14:54:44.071 -05:00 [Information] Closed connection at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:54:44.075 -05:00 [Information] Opened connection at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:54:44.088 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:54:44.088 -05:00 [Information] 
+
+2017-03-02 14:54:44.089 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:54:44.090 -05:00 [Information] -- Executing at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:54:44.092 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 14:54:44.092 -05:00 [Information] 
+
+2017-03-02 14:54:44.093 -05:00 [Information] Closed connection at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:54:44.149 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:54:44.209 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:54:44.210 -05:00 [Information] 
+
+2017-03-02 14:54:44.211 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:54:44.211 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:54:44.322 -05:00 [Information] -- Completed in 110 ms with result: SqlDataReader
+
+2017-03-02 14:54:44.322 -05:00 [Information] 
+
+2017-03-02 14:54:44.332 -05:00 [Information] Closed connection at 3/2/2017 2:54:44 PM -05:00
+
+2017-03-02 14:56:22.306 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 14:56:22.373 -05:00 [Information] Request finished in 100.2843ms 200 
+2017-03-02 14:56:25.103 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 14:56:25.594 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 14:56:25.796 -05:00 [Information] Opened connection at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.797 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 14:56:25.798 -05:00 [Information] 
+
+2017-03-02 14:56:25.799 -05:00 [Information] -- Executing at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.819 -05:00 [Information] -- Completed in 18 ms with result: 5
+
+2017-03-02 14:56:25.820 -05:00 [Information] 
+
+2017-03-02 14:56:25.820 -05:00 [Information] Closed connection at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.890 -05:00 [Information] Opened connection at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.961 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 14:56:25.962 -05:00 [Information] 
+
+2017-03-02 14:56:25.963 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:56:25.963 -05:00 [Information] -- Executing at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.968 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 14:56:25.968 -05:00 [Information] 
+
+2017-03-02 14:56:25.975 -05:00 [Information] Closed connection at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.978 -05:00 [Information] Opened connection at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.988 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 14:56:25.989 -05:00 [Information] 
+
+2017-03-02 14:56:25.990 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 14:56:25.990 -05:00 [Information] -- Executing at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:25.992 -05:00 [Information] -- Completed in 0 ms with result: SqlDataReader
+
+2017-03-02 14:56:25.992 -05:00 [Information] 
+
+2017-03-02 14:56:25.993 -05:00 [Information] Closed connection at 3/2/2017 2:56:25 PM -05:00
+
+2017-03-02 14:56:26.048 -05:00 [Information] Opened connection asynchronously at 3/2/2017 2:56:26 PM -05:00
+
+2017-03-02 14:56:26.101 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 14:56:26.101 -05:00 [Information] 
+
+2017-03-02 14:56:26.102 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 14:56:26.103 -05:00 [Information] -- Executing asynchronously at 3/2/2017 2:56:26 PM -05:00
+
+2017-03-02 14:56:26.111 -05:00 [Information] -- Completed in 8 ms with result: SqlDataReader
+
+2017-03-02 14:56:26.112 -05:00 [Information] 
+
+2017-03-02 14:56:26.120 -05:00 [Information] Closed connection at 3/2/2017 2:56:26 PM -05:00
+
+2017-03-02 14:56:37.635 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:56:37.943 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 12555.8481ms
+2017-03-02 14:56:37.947 -05:00 [Information] Request finished in 12844.3713ms 200 application/json; charset=utf-8
+2017-03-02 14:56:57.849 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/customers/195/Orders/99  
+2017-03-02 14:56:57.856 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195", "99"]) - ModelState is Valid
+2017-03-02 14:56:57.902 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 14:56:57.904 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 51.1739ms
+2017-03-02 14:56:57.906 -05:00 [Information] Request finished in 56.7945ms 200 application/json; charset=utf-8
+2017-03-02 15:00:33.253 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 15:00:33.320 -05:00 [Information] Request finished in 90.2131ms 200 
+2017-03-02 15:00:56.469 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/customers/195/Orders/99  
+2017-03-02 15:00:56.962 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195", "99"]) - ModelState is Valid
+2017-03-02 15:00:57.551 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:00:57.749 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 987.0659ms
+2017-03-02 15:00:57.751 -05:00 [Information] Request finished in 1282.9304ms 200 application/json; charset=utf-8
+2017-03-02 15:10:08.605 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 15:10:08.670 -05:00 [Information] Request finished in 92.4367ms 200 
+2017-03-02 15:10:26.401 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/customers/195/Orders/99  
+2017-03-02 15:10:26.881 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195", "99"]) - ModelState is Valid
+2017-03-02 15:10:27.476 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:10:27.718 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 1010.462ms
+2017-03-02 15:10:27.721 -05:00 [Information] Request finished in 1319.797ms 200 application/json; charset=utf-8
+2017-03-02 15:11:57.100 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:8088/api/customers/195/Orders application/json 200
+2017-03-02 15:11:57.241 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Post (Demo.Api.Web)" with arguments (["195", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:11:57.258 -05:00 [Information] New order created : OrderModel { Url: null, Id: 0, CustomerId: 195, OrderDate: 02/18/2017 12:32:34, OrderStatus: Invoiced, OrderLines: [OrderLineModel { Id: 72, OrderId: 99, ProductId: 4, Quantity: 40 }] }
+2017-03-02 15:11:57.287 -05:00 [Information] Opened connection asynchronously at 3/2/2017 3:11:57 PM -05:00
+
+2017-03-02 15:11:57.289 -05:00 [Information] Started transaction at 3/2/2017 3:11:57 PM -05:00
+
+2017-03-02 15:11:57.305 -05:00 [Information] INSERT [dbo].[Orders]([OrderDate], [OrderStatus], [CustomerId])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[Orders]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 15:11:57.306 -05:00 [Information] 
+
+2017-03-02 15:11:57.307 -05:00 [Information] -- @0: '2/18/2017 12:32:34 PM' (Type = DateTime2)
+
+2017-03-02 15:11:57.308 -05:00 [Information] -- @1: '1' (Type = Int32)
+
+2017-03-02 15:11:57.309 -05:00 [Information] -- @2: '195' (Type = Int32)
+
+2017-03-02 15:11:57.309 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:11:57 PM -05:00
+
+2017-03-02 15:11:57.320 -05:00 [Information] -- Completed in 9 ms with result: SqlDataReader
+
+2017-03-02 15:11:57.320 -05:00 [Information] 
+
+2017-03-02 15:11:57.323 -05:00 [Information] INSERT [dbo].[OrderLines]([OrderId], [ProductId], [Quantity])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[OrderLines]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 15:11:57.324 -05:00 [Information] 
+
+2017-03-02 15:11:57.326 -05:00 [Information] -- @0: '202' (Type = Int32)
+
+2017-03-02 15:11:57.326 -05:00 [Information] -- @1: '4' (Type = Int32)
+
+2017-03-02 15:11:57.326 -05:00 [Information] -- @2: '40' (Type = Int32)
+
+2017-03-02 15:11:57.326 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:11:57 PM -05:00
+
+2017-03-02 15:11:57.334 -05:00 [Information] -- Completed in 6 ms with result: SqlDataReader
+
+2017-03-02 15:11:57.335 -05:00 [Information] 
+
+2017-03-02 15:11:57.340 -05:00 [Information] Committed transaction at 3/2/2017 3:11:57 PM -05:00
+
+2017-03-02 15:11:57.341 -05:00 [Information] Closed connection at 3/2/2017 3:11:57 PM -05:00
+
+2017-03-02 15:11:57.423 -05:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 400
+2017-03-02 15:11:57.424 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Post (Demo.Api.Web)" in 321.7842ms
+2017-03-02 15:11:57.425 -05:00 [Information] Request finished in 334.0609ms 400 
+2017-03-02 15:12:46.335 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:8088/api/customers/195/Orders application/json 200
+2017-03-02 15:12:46.358 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Post (Demo.Api.Web)" with arguments (["195", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:12:50.770 -05:00 [Information] New order created : OrderModel { Url: null, Id: 0, CustomerId: 195, OrderDate: 02/18/2017 12:32:34, OrderStatus: Invoiced, OrderLines: [OrderLineModel { Id: 72, OrderId: 99, ProductId: 4, Quantity: 40 }] }
+2017-03-02 15:12:56.500 -05:00 [Information] Opened connection asynchronously at 3/2/2017 3:12:56 PM -05:00
+
+2017-03-02 15:12:56.501 -05:00 [Information] Started transaction at 3/2/2017 3:12:56 PM -05:00
+
+2017-03-02 15:12:56.503 -05:00 [Information] INSERT [dbo].[Orders]([OrderDate], [OrderStatus], [CustomerId])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[Orders]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 15:12:56.503 -05:00 [Information] 
+
+2017-03-02 15:12:56.504 -05:00 [Information] -- @0: '2/18/2017 12:32:34 PM' (Type = DateTime2)
+
+2017-03-02 15:12:56.504 -05:00 [Information] -- @1: '1' (Type = Int32)
+
+2017-03-02 15:12:56.505 -05:00 [Information] -- @2: '195' (Type = Int32)
+
+2017-03-02 15:12:56.505 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:12:56 PM -05:00
+
+2017-03-02 15:12:56.524 -05:00 [Information] -- Completed in 18 ms with result: SqlDataReader
+
+2017-03-02 15:12:56.525 -05:00 [Information] 
+
+2017-03-02 15:12:56.525 -05:00 [Information] INSERT [dbo].[OrderLines]([OrderId], [ProductId], [Quantity])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[OrderLines]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 15:12:56.526 -05:00 [Information] 
+
+2017-03-02 15:12:56.526 -05:00 [Information] -- @0: '203' (Type = Int32)
+
+2017-03-02 15:12:56.527 -05:00 [Information] -- @1: '4' (Type = Int32)
+
+2017-03-02 15:12:56.527 -05:00 [Information] -- @2: '40' (Type = Int32)
+
+2017-03-02 15:12:56.527 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:12:56 PM -05:00
+
+2017-03-02 15:12:56.536 -05:00 [Information] -- Completed in 5 ms with result: SqlDataReader
+
+2017-03-02 15:12:56.537 -05:00 [Information] 
+
+2017-03-02 15:12:56.538 -05:00 [Information] Committed transaction at 3/2/2017 3:12:56 PM -05:00
+
+2017-03-02 15:12:56.539 -05:00 [Information] Closed connection at 3/2/2017 3:12:56 PM -05:00
+
+2017-03-02 15:13:01.587 -05:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 400
+2017-03-02 15:13:01.588 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Post (Demo.Api.Web)" in 15230.4946ms
+2017-03-02 15:13:01.589 -05:00 [Information] Request finished in 15253.7192ms 400 
+2017-03-02 15:13:26.774 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders  
+2017-03-02 15:13:26.777 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195"]) - ModelState is Valid
+2017-03-02 15:13:26.785 -05:00 [Information] Opened connection asynchronously at 3/2/2017 3:13:26 PM -05:00
+
+2017-03-02 15:13:26.789 -05:00 [Information] SELECT 
+    [Project1].[Id] AS [Id], 
+    [Project1].[OrderDate] AS [OrderDate], 
+    [Project1].[OrderStatus] AS [OrderStatus], 
+    [Project1].[CustomerId] AS [CustomerId], 
+    [Project1].[C1] AS [C1], 
+    [Project1].[Id1] AS [Id1], 
+    [Project1].[OrderId] AS [OrderId], 
+    [Project1].[ProductId] AS [ProductId], 
+    [Project1].[Quantity] AS [Quantity]
+    FROM ( SELECT 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[OrderDate] AS [OrderDate], 
+        [Extent1].[OrderStatus] AS [OrderStatus], 
+        [Extent1].[CustomerId] AS [CustomerId], 
+        [Extent2].[Id] AS [Id1], 
+        [Extent2].[OrderId] AS [OrderId], 
+        [Extent2].[ProductId] AS [ProductId], 
+        [Extent2].[Quantity] AS [Quantity], 
+        CASE WHEN ([Extent2].[Id] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1]
+        FROM  [dbo].[Orders] AS [Extent1]
+        LEFT OUTER JOIN [dbo].[OrderLines] AS [Extent2] ON [Extent1].[Id] = [Extent2].[OrderId]
+        WHERE [Extent1].[CustomerId] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[Id] ASC, [Project1].[C1] ASC
+2017-03-02 15:13:26.790 -05:00 [Information] 
+
+2017-03-02 15:13:26.790 -05:00 [Information] -- p__linq__0: '195' (Type = Int32, IsNullable = false)
+
+2017-03-02 15:13:26.791 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:13:26 PM -05:00
+
+2017-03-02 15:13:26.797 -05:00 [Information] -- Completed in 5 ms with result: SqlDataReader
+
+2017-03-02 15:13:26.798 -05:00 [Information] 
+
+2017-03-02 15:13:26.800 -05:00 [Information] Closed connection at 3/2/2017 3:13:26 PM -05:00
+
+2017-03-02 15:13:26.819 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:13:26.824 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 47.7798ms
+2017-03-02 15:13:26.826 -05:00 [Information] Request finished in 51.5647ms 200 application/json; charset=utf-8
+2017-03-02 15:14:06.738 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 15:14:06.800 -05:00 [Information] Request finished in 94.3533ms 200 
+2017-03-02 15:14:10.410 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:8088/api/customers/195/Orders application/json 200
+2017-03-02 15:14:11.271 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Post (Demo.Api.Web)" with arguments (["195", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:14:14.616 -05:00 [Information] New order created : OrderModel { Url: null, Id: 0, CustomerId: 195, OrderDate: 02/26/2017 12:32:34, OrderStatus: Invoiced, OrderLines: [OrderLineModel { Id: 72, OrderId: 99, ProductId: 4, Quantity: 40 }] }
+2017-03-02 15:14:14.825 -05:00 [Information] Opened connection at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:14.827 -05:00 [Information] 
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Addresses','dbo.Customers','dbo.Orders','dbo.OrderLines','dbo.Products')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2017-03-02 15:14:14.827 -05:00 [Information] 
+
+2017-03-02 15:14:14.828 -05:00 [Information] -- Executing at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:14.852 -05:00 [Information] -- Completed in 22 ms with result: 5
+
+2017-03-02 15:14:14.853 -05:00 [Information] 
+
+2017-03-02 15:14:14.853 -05:00 [Information] Closed connection at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:14.912 -05:00 [Information] Opened connection at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:14.980 -05:00 [Information] SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2017-03-02 15:14:14.981 -05:00 [Information] 
+
+2017-03-02 15:14:14.982 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 15:14:14.982 -05:00 [Information] -- Executing at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:14.987 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 15:14:14.988 -05:00 [Information] 
+
+2017-03-02 15:14:14.994 -05:00 [Information] Closed connection at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:14.998 -05:00 [Information] Opened connection at 3/2/2017 3:14:14 PM -05:00
+
+2017-03-02 15:14:15.008 -05:00 [Information] SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2017-03-02 15:14:15.009 -05:00 [Information] 
+
+2017-03-02 15:14:15.010 -05:00 [Information] -- p__linq__0: 'Demo.Core.Repositories.Migrations.Configuration' (Type = String, Size = 4000)
+
+2017-03-02 15:14:15.010 -05:00 [Information] -- Executing at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.012 -05:00 [Information] -- Completed in 1 ms with result: SqlDataReader
+
+2017-03-02 15:14:15.012 -05:00 [Information] 
+
+2017-03-02 15:14:15.013 -05:00 [Information] Closed connection at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.085 -05:00 [Information] Opened connection asynchronously at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.087 -05:00 [Information] Started transaction at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.107 -05:00 [Information] INSERT [dbo].[Orders]([OrderDate], [OrderStatus], [CustomerId])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[Orders]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 15:14:15.108 -05:00 [Information] 
+
+2017-03-02 15:14:15.109 -05:00 [Information] -- @0: '2/26/2017 12:32:34 PM' (Type = DateTime2)
+
+2017-03-02 15:14:15.109 -05:00 [Information] -- @1: '1' (Type = Int32)
+
+2017-03-02 15:14:15.110 -05:00 [Information] -- @2: '195' (Type = Int32)
+
+2017-03-02 15:14:15.111 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.117 -05:00 [Information] -- Completed in 5 ms with result: SqlDataReader
+
+2017-03-02 15:14:15.118 -05:00 [Information] 
+
+2017-03-02 15:14:15.120 -05:00 [Information] INSERT [dbo].[OrderLines]([OrderId], [ProductId], [Quantity])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[OrderLines]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 15:14:15.121 -05:00 [Information] 
+
+2017-03-02 15:14:15.122 -05:00 [Information] -- @0: '204' (Type = Int32)
+
+2017-03-02 15:14:15.122 -05:00 [Information] -- @1: '4' (Type = Int32)
+
+2017-03-02 15:14:15.123 -05:00 [Information] -- @2: '40' (Type = Int32)
+
+2017-03-02 15:14:15.123 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.128 -05:00 [Information] -- Completed in 3 ms with result: SqlDataReader
+
+2017-03-02 15:14:15.128 -05:00 [Information] 
+
+2017-03-02 15:14:15.131 -05:00 [Information] Committed transaction at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.132 -05:00 [Information] Closed connection at 3/2/2017 3:14:15 PM -05:00
+
+2017-03-02 15:14:15.194 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:14:15.301 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Post (Demo.Api.Web)" in 4465.1479ms
+2017-03-02 15:14:15.305 -05:00 [Information] Request finished in 4895.2239ms 201 application/json; charset=utf-8
+2017-03-02 15:28:42.902 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 200
+2017-03-02 15:28:42.920 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:28:43.103 -05:00 [Error] Connection id ""0HL31L2MUBU2G"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: A referential integrity constraint violation occurred: The property value(s) of 'Order.Id' on one end of a relationship do not match the property value(s) of 'OrderLine.OrderId' on the other end.
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.CheckReferentialConstraintProperties(EntityEntry ownerEntry)
+   at System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.CheckReferentialConstraintProperties(EntityEntry ownerEntry)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.AddGraphToObjectStateManager(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists, Boolean addRelationshipAsUnchanged, Boolean doAttach)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.IncludeEntity(IEntityWrapper wrappedEntity, Boolean addRelationshipAsUnchanged, Boolean doAttach)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Include(Boolean addRelationshipAsUnchanged, Boolean doAttach)
+   at System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.AddRelatedEntitiesToObjectStateManager(Boolean doAttach)
+   at System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at Demo.Core.Repositories.GenericRepository`1.Update(TEntity entityToUpdate) in C:\Projects\Demo\Core\Demo.Core.Repositories\GenericRepository.cs:line 98
+   at Demo.Api.Web.Controllers.OrdersController.<Put>d__7.MoveNext() in C:\Projects\Demo\Api\Demo.Api.Web\Controllers\OrdersController.cs:line 121
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-03-02 15:28:43.111 -05:00 [Information] Request finished in 210.8581ms 200 
+2017-03-02 15:29:03.140 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 200
+2017-03-02 15:29:03.143 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:29:51.469 -05:00 [Error] Connection id ""0HL31L2MUBU2G"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: A referential integrity constraint violation occurred: The property value(s) of 'Order.Id' on one end of a relationship do not match the property value(s) of 'OrderLine.OrderId' on the other end.
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.CheckReferentialConstraintProperties(EntityEntry ownerEntry)
+   at System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.CheckReferentialConstraintProperties(EntityEntry ownerEntry)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.AddGraphToObjectStateManager(IEntityWrapper wrappedEntity, Boolean relationshipAlreadyExists, Boolean addRelationshipAsUnchanged, Boolean doAttach)
+   at System.Data.Entity.Core.Objects.DataClasses.RelatedEnd.IncludeEntity(IEntityWrapper wrappedEntity, Boolean addRelationshipAsUnchanged, Boolean doAttach)
+   at System.Data.Entity.Core.Objects.DataClasses.EntityCollection`1.Include(Boolean addRelationshipAsUnchanged, Boolean doAttach)
+   at System.Data.Entity.Core.Objects.DataClasses.RelationshipManager.AddRelatedEntitiesToObjectStateManager(Boolean doAttach)
+   at System.Data.Entity.Core.Objects.ObjectContext.AttachTo(String entitySetName, Object entity)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Attach(Object entity)
+   at System.Data.Entity.DbSet`1.Attach(TEntity entity)
+   at Demo.Core.Repositories.GenericRepository`1.Update(TEntity entityToUpdate) in C:\Projects\Demo\Core\Demo.Core.Repositories\GenericRepository.cs:line 98
+   at Demo.Api.Web.Controllers.OrdersController.<Put>d__7.MoveNext() in C:\Projects\Demo\Api\Demo.Api.Web\Controllers\OrdersController.cs:line 121
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionFilterAsync>d__28.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-03-02 15:29:51.470 -05:00 [Information] Request finished in 48330.3002ms 200 
+2017-03-02 15:29:54.403 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 200
+2017-03-02 15:29:54.404 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:31:46.476 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 15:31:46.544 -05:00 [Information] Request finished in 102.8556ms 200 
+2017-03-02 15:31:46.789 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 200
+2017-03-02 15:31:47.566 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:50:01.187 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 15:50:01.259 -05:00 [Information] Request finished in 98.6097ms 200 
+2017-03-02 15:50:10.534 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 200
+2017-03-02 15:50:11.471 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:50:17.457 -05:00 [Information] Opened connection asynchronously at 3/2/2017 3:50:17 PM -05:00
+
+2017-03-02 15:50:17.459 -05:00 [Information] Started transaction at 3/2/2017 3:50:17 PM -05:00
+
+2017-03-02 15:50:17.467 -05:00 [Information] UPDATE [dbo].[Orders]
+SET [OrderDate] = @0, [OrderStatus] = @1, [CustomerId] = @2
+WHERE ([Id] = @3)
+
+2017-03-02 15:50:17.468 -05:00 [Information] -- @0: '2/26/2017 12:32:34 PM' (Type = DateTime2)
+
+2017-03-02 15:50:17.468 -05:00 [Information] -- @1: '2' (Type = Int32)
+
+2017-03-02 15:50:17.468 -05:00 [Information] -- @2: '195' (Type = Int32)
+
+2017-03-02 15:50:17.469 -05:00 [Information] -- @3: '204' (Type = Int32)
+
+2017-03-02 15:50:17.469 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:50:17 PM -05:00
+
+2017-03-02 15:50:17.486 -05:00 [Information] -- Completed in 15 ms with result: 1
+
+2017-03-02 15:50:17.487 -05:00 [Information] 
+
+2017-03-02 15:50:17.490 -05:00 [Information] Committed transaction at 3/2/2017 3:50:17 PM -05:00
+
+2017-03-02 15:50:17.490 -05:00 [Information] Closed connection at 3/2/2017 3:50:17 PM -05:00
+
+2017-03-02 15:50:17.570 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:50:17.693 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" in 6740.2485ms
+2017-03-02 15:50:17.697 -05:00 [Information] Request finished in 7162.4032ms 200 application/json; charset=utf-8
+2017-03-02 15:51:18.773 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 276
+2017-03-02 15:51:18.808 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 15:51:24.170 -05:00 [Information] Opened connection asynchronously at 3/2/2017 3:51:24 PM -05:00
+
+2017-03-02 15:51:24.172 -05:00 [Information] Started transaction at 3/2/2017 3:51:24 PM -05:00
+
+2017-03-02 15:51:24.173 -05:00 [Information] UPDATE [dbo].[Orders]
+SET [OrderDate] = @0, [OrderStatus] = @1, [CustomerId] = @2
+WHERE ([Id] = @3)
+
+2017-03-02 15:51:24.174 -05:00 [Information] -- @0: '2/26/2017 12:32:34 PM' (Type = DateTime2)
+
+2017-03-02 15:51:24.174 -05:00 [Information] -- @1: '2' (Type = Int32)
+
+2017-03-02 15:51:24.175 -05:00 [Information] -- @2: '195' (Type = Int32)
+
+2017-03-02 15:51:24.175 -05:00 [Information] -- @3: '204' (Type = Int32)
+
+2017-03-02 15:51:24.176 -05:00 [Information] -- Executing asynchronously at 3/2/2017 3:51:24 PM -05:00
+
+2017-03-02 15:51:24.179 -05:00 [Information] -- Completed in 2 ms with result: 1
+
+2017-03-02 15:51:24.180 -05:00 [Information] 
+
+2017-03-02 15:51:24.184 -05:00 [Information] Committed transaction at 3/2/2017 3:51:24 PM -05:00
+
+2017-03-02 15:51:24.185 -05:00 [Information] Closed connection at 3/2/2017 3:51:24 PM -05:00
+
+2017-03-02 15:51:24.186 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:51:24.187 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" in 5389.577ms
+2017-03-02 15:51:24.188 -05:00 [Information] Request finished in 5416.7692ms 200 application/json; charset=utf-8
+2017-03-02 15:52:32.268 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders/204  
+2017-03-02 15:52:32.314 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195", "204"]) - ModelState is Valid
+2017-03-02 15:52:32.326 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 15:52:32.326 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 56.813ms
+2017-03-02 15:52:32.327 -05:00 [Information] Request finished in 62.3068ms 200 application/json; charset=utf-8
+2017-03-02 16:14:13.661 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 16:14:13.748 -05:00 [Information] Request finished in 125.5532ms 200 
+2017-03-02 16:14:31.050 -05:00 [Information] Request starting HTTP/1.1 PUT http://localhost:8088/api/customers/195/Orders/204 application/json 278
+2017-03-02 16:14:31.741 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" with arguments (["195", "204", "Demo.Core.Dtos.OrderModel"]) - ModelState is Valid
+2017-03-02 16:14:35.345 -05:00 [Information] Opened connection asynchronously at 3/2/2017 4:14:35 PM -05:00
+
+2017-03-02 16:14:35.347 -05:00 [Information] Started transaction at 3/2/2017 4:14:35 PM -05:00
+
+2017-03-02 16:14:35.355 -05:00 [Information] UPDATE [dbo].[Orders]
+SET [OrderDate] = @0, [OrderStatus] = @1, [CustomerId] = @2
+WHERE ([Id] = @3)
+
+2017-03-02 16:14:35.356 -05:00 [Information] -- @0: '2/26/2017 12:32:34 PM' (Type = DateTime2)
+
+2017-03-02 16:14:35.356 -05:00 [Information] -- @1: '2' (Type = Int32)
+
+2017-03-02 16:14:35.357 -05:00 [Information] -- @2: '195' (Type = Int32)
+
+2017-03-02 16:14:35.357 -05:00 [Information] -- @3: '204' (Type = Int32)
+
+2017-03-02 16:14:35.358 -05:00 [Information] -- Executing asynchronously at 3/2/2017 4:14:35 PM -05:00
+
+2017-03-02 16:14:35.575 -05:00 [Information] -- Completed in 215 ms with result: 1
+
+2017-03-02 16:14:35.575 -05:00 [Information] 
+
+2017-03-02 16:14:35.578 -05:00 [Information] INSERT [dbo].[OrderLines]([OrderId], [ProductId], [Quantity])
+VALUES (@0, @1, @2)
+SELECT [Id]
+FROM [dbo].[OrderLines]
+WHERE @@ROWCOUNT > 0 AND [Id] = scope_identity()
+2017-03-02 16:14:35.579 -05:00 [Information] 
+
+2017-03-02 16:14:35.579 -05:00 [Information] -- @0: '204' (Type = Int32)
+
+2017-03-02 16:14:35.580 -05:00 [Information] -- @1: '1' (Type = Int32)
+
+2017-03-02 16:14:35.581 -05:00 [Information] -- @2: '2' (Type = Int32)
+
+2017-03-02 16:14:35.581 -05:00 [Information] -- Executing asynchronously at 3/2/2017 4:14:35 PM -05:00
+
+2017-03-02 16:14:35.797 -05:00 [Information] -- Completed in 215 ms with result: SqlDataReader
+
+2017-03-02 16:14:35.797 -05:00 [Information] 
+
+2017-03-02 16:14:35.801 -05:00 [Information] Committed transaction at 3/2/2017 4:14:35 PM -05:00
+
+2017-03-02 16:14:35.801 -05:00 [Information] Closed connection at 3/2/2017 4:14:35 PM -05:00
+
+2017-03-02 16:14:35.899 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 16:14:36.009 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Put (Demo.Api.Web)" in 4678.901ms
+2017-03-02 16:14:36.014 -05:00 [Information] Request finished in 4962.9302ms 200 application/json; charset=utf-8
+2017-03-02 16:14:54.990 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/api/Customers/195/orders/204  
+2017-03-02 16:14:54.998 -05:00 [Information] Executing action method "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" with arguments (["195", "204"]) - ModelState is Valid
+2017-03-02 16:14:55.013 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2017-03-02 16:14:55.014 -05:00 [Information] Executed action "Demo.Api.Web.Controllers.OrdersController.Get (Demo.Api.Web)" in 19.7773ms
+2017-03-02 16:14:55.016 -05:00 [Information] Request finished in 25.7759ms 200 application/json; charset=utf-8
+2017-03-02 17:09:46.871 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 17:09:46.939 -05:00 [Information] Request finished in 97.7319ms 200 
+2017-03-02 17:09:54.595 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger  
+2017-03-02 17:09:54.616 -05:00 [Information] Request finished in 21.6376ms 301 
+2017-03-02 17:09:54.622 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:09:54.673 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.690 -05:00 [Information] Request finished in 69.0282ms 200 text/html
+2017-03-02 17:09:54.693 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:09:54.695 -05:00 [Information] Sending file. Request path: '"/css/typography.css"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.696 -05:00 [Information] Request finished in 3.3589ms 200 text/css
+2017-03-02 17:09:54.701 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:09:54.726 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:09:54.754 -05:00 [Information] Sending file. Request path: '"/lib/object-assign-pollyfill.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.775 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:09:54.776 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:09:54.777 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:09:54.798 -05:00 [Information] Request finished in 76.886ms 200 application/javascript
+2017-03-02 17:09:54.798 -05:00 [Information] Sending file. Request path: '"/lib/jquery.wiggle.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.820 -05:00 [Information] Sending file. Request path: '"/lib/jquery.slideto.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.841 -05:00 [Information] Sending file. Request path: '"/css/reset.css"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.863 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:09:54.864 -05:00 [Information] Request finished in 93.003ms 200 application/javascript
+2017-03-02 17:09:54.864 -05:00 [Information] Sending file. Request path: '"/css/screen.css"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.887 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:09:54.888 -05:00 [Information] Sending file. Request path: '"/lib/jquery-1.8.0.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.892 -05:00 [Information] Sending file. Request path: '"/lib/handlebars-4.0.5.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.904 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:09:54.904 -05:00 [Information] Request finished in 138.8512ms 200 application/javascript
+2017-03-02 17:09:54.926 -05:00 [Information] Request finished in 41.0037ms 200 application/javascript
+2017-03-02 17:09:54.926 -05:00 [Information] Sending file. Request path: '"/lib/jquery.ba-bbq.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:54.949 -05:00 [Information] Request finished in 136.9081ms 200 text/css
+2017-03-02 17:09:54.976 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:09:54.976 -05:00 [Information] Request finished in 106.8081ms 200 application/javascript
+2017-03-02 17:09:54.997 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:09:55.020 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:09:55.020 -05:00 [Information] Sending file. Request path: '"/lib/lodash.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.021 -05:00 [Information] Request finished in 222.3354ms 200 application/javascript
+2017-03-02 17:09:55.042 -05:00 [Information] Request finished in 115.605ms 200 application/javascript
+2017-03-02 17:09:55.066 -05:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.086 -05:00 [Information] Request finished in 139.3232ms 200 text/css
+2017-03-02 17:09:55.113 -05:00 [Information] Sending file. Request path: '"/lib/jsoneditor.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.113 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:09:55.114 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:09:55.134 -05:00 [Information] Sending file. Request path: '"/lib/marked.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.161 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:09:55.192 -05:00 [Information] Request finished in 139.8012ms 200 application/javascript
+2017-03-02 17:09:55.214 -05:00 [Information] Sending file. Request path: '"/lib/backbone-min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.242 -05:00 [Information] Request finished in 207.1963ms 200 application/javascript
+2017-03-02 17:09:55.243 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:09:55.243 -05:00 [Information] Request finished in 128.0422ms 200 application/javascript
+2017-03-02 17:09:55.244 -05:00 [Information] Sending file. Request path: '"/swagger-ui.min.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.248 -05:00 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack_extended.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.262 -05:00 [Information] Request finished in 228.1513ms 200 application/javascript
+2017-03-02 17:09:55.265 -05:00 [Information] Request finished in 92.1848ms 200 application/javascript
+2017-03-02 17:09:55.267 -05:00 [Information] Request finished in 315.8479ms 200 application/javascript
+2017-03-02 17:09:55.271 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:09:55.272 -05:00 [Information] Sending file. Request path: '"/lib/swagger-oauth.js"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.273 -05:00 [Information] Request finished in 80.4991ms 200 application/javascript
+2017-03-02 17:09:55.278 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:09:55.280 -05:00 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.285 -05:00 [Information] Request finished in 3.3049ms 200 image/png
+2017-03-02 17:09:55.288 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:09:55.292 -05:00 [Information] Sending file. Request path: '"/css/print.css"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.296 -05:00 [Information] Request finished in 9.7521ms 200 text/css
+2017-03-02 17:09:55.465 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:09:55.476 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:09:55.477 -05:00 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.478 -05:00 [Information] Request finished in 1.7818ms 200 image/png
+2017-03-02 17:09:55.482 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:09:55.483 -05:00 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2017-03-02 17:09:55.485 -05:00 [Information] Request finished in 2.0344ms 200 image/png
+2017-03-02 17:09:55.889 -05:00 [Information] Request finished in 423.2731ms 200 application/json
+2017-03-02 17:10:04.512 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/throbber.gif  
+2017-03-02 17:10:04.513 -05:00 [Information] Sending file. Request path: '"/images/throbber.gif"'. Physical path: '"N/A"'
+2017-03-02 17:10:04.514 -05:00 [Information] Request finished in 1.579ms 200 image/gif
+2017-03-02 17:10:04.530 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:10:04.537 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:10:04.540 -05:00 [Information] Request finished in 9.9552ms 304 image/png
+2017-03-02 17:10:04.543 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:10:04.544 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:10:04.545 -05:00 [Information] Request finished in 1.6515ms 304 image/png
+2017-03-02 17:10:09.960 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:10:09.961 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:10:09.961 -05:00 [Information] Request finished in 1.6039ms 304 image/png
+2017-03-02 17:10:09.969 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:10:09.971 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:10:09.972 -05:00 [Information] Request finished in 3.761ms 304 image/png
+2017-03-02 17:10:11.367 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:10:11.368 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:10:11.369 -05:00 [Information] Request finished in 3.0927ms 304 image/png
+2017-03-02 17:10:11.373 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:10:11.374 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:10:11.374 -05:00 [Information] Request finished in 1.7693ms 304 image/png
+2017-03-02 17:10:26.622 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:10:26.623 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:10:26.623 -05:00 [Information] Request finished in 1.2788ms 304 image/png
+2017-03-02 17:10:26.627 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:10:26.628 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:10:26.628 -05:00 [Information] Request finished in 1.3271ms 304 image/png
+2017-03-02 17:10:32.546 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:10:32.547 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:10:32.549 -05:00 [Information] Request finished in 2.1027ms 304 image/png
+2017-03-02 17:10:32.551 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:10:32.552 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:10:32.552 -05:00 [Information] Request finished in 1.2037ms 304 image/png
+2017-03-02 17:13:52.414 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:13:52.414 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 17:13:52.478 -05:00 [Information] Request finished in 107.5308ms 200 
+2017-03-02 17:13:52.753 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:13:52.778 -05:00 [Information] Request finished in 414.9028ms 200 text/html
+2017-03-02 17:13:52.786 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:13:52.812 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:13:52.813 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:13:52.815 -05:00 [Information] The file "/css/typography.css" was not modified
+2017-03-02 17:13:52.892 -05:00 [Information] The file "/css/reset.css" was not modified
+2017-03-02 17:13:52.892 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:13:52.933 -05:00 [Information] Request finished in 30.5644ms 304 text/css
+2017-03-02 17:13:52.912 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:13:52.934 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:13:52.954 -05:00 [Information] Request finished in 142.1003ms 304 text/css
+2017-03-02 17:13:52.974 -05:00 [Information] The file "/css/screen.css" was not modified
+2017-03-02 17:13:52.975 -05:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-03-02 17:13:52.997 -05:00 [Information] Request finished in 162.3156ms 304 text/css
+2017-03-02 17:13:53.018 -05:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-03-02 17:13:53.039 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:13:53.040 -05:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-03-02 17:13:53.061 -05:00 [Information] Request finished in 195.8021ms 304 application/javascript
+2017-03-02 17:13:53.061 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:13:53.062 -05:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-03-02 17:13:53.085 -05:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-03-02 17:13:53.105 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:13:53.106 -05:00 [Information] Request finished in 45.1964ms 304 application/javascript
+2017-03-02 17:13:53.129 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:13:53.129 -05:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-03-02 17:13:53.150 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:13:53.151 -05:00 [Information] Request finished in 131.3573ms 304 application/javascript
+2017-03-02 17:13:53.171 -05:00 [Information] Request finished in 147.5427ms 304 application/javascript
+2017-03-02 17:13:53.179 -05:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-03-02 17:13:53.179 -05:00 [Information] Request finished in 64.9084ms 304 application/javascript
+2017-03-02 17:13:53.227 -05:00 [Information] Request finished in 94.6482ms 304 application/javascript
+2017-03-02 17:13:53.247 -05:00 [Information] Request finished in 174.997ms 304 application/javascript
+2017-03-02 17:13:53.227 -05:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-03-02 17:13:53.248 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:13:53.271 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:13:53.292 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:13:53.293 -05:00 [Information] Request finished in 118.6374ms 304 application/javascript
+2017-03-02 17:13:53.293 -05:00 [Information] The file "/lib/marked.js" was not modified
+2017-03-02 17:13:53.320 -05:00 [Information] Request finished in 22.3833ms 304 application/javascript
+2017-03-02 17:13:53.320 -05:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-03-02 17:13:53.321 -05:00 [Information] Request finished in 114.6618ms 304 application/javascript
+2017-03-02 17:13:53.322 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:13:53.323 -05:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-03-02 17:13:53.344 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:13:53.344 -05:00 [Information] Request finished in 26.821ms 304 application/javascript
+2017-03-02 17:13:53.345 -05:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-03-02 17:13:53.366 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:13:53.366 -05:00 [Information] Request finished in 74.2652ms 304 application/javascript
+2017-03-02 17:13:53.367 -05:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-03-02 17:13:53.388 -05:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-03-02 17:13:53.408 -05:00 [Information] Request finished in 139.288ms 304 application/javascript
+2017-03-02 17:13:53.408 -05:00 [Information] Request finished in 181.3188ms 304 application/javascript
+2017-03-02 17:13:53.412 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:13:53.413 -05:00 [Information] The file "/css/print.css" was not modified
+2017-03-02 17:13:53.414 -05:00 [Information] Request finished in 1.494ms 304 text/css
+2017-03-02 17:13:53.523 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:13:53.524 -05:00 [Information] The file "/images/logo_small.png" was not modified
+2017-03-02 17:13:53.526 -05:00 [Information] Request finished in 3.502ms 304 image/png
+2017-03-02 17:13:53.535 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:13:53.541 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:13:53.542 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:13:53.543 -05:00 [Information] Request finished in 2.1318ms 304 image/png
+2017-03-02 17:13:53.548 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:13:53.549 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:13:53.550 -05:00 [Information] Request finished in 3.1342ms 304 image/png
+2017-03-02 17:13:53.638 -05:00 [Error] Connection id ""0HL31N5KEFCPU"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types Demo.Core.Models.Address and Demo.Core.Dtos.Address. See config settings - "UseFullTypeNameInSchemaIds" or "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.<>c__DisplayClass17_0.<CreateObjectSchema>b__3(JsonProperty prop)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-03-02 17:13:53.648 -05:00 [Information] Request finished in 111.8821ms 200 
+2017-03-02 17:14:00.449 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:14:00.451 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:14:00.451 -05:00 [Information] Request finished in 3.4552ms 200 text/html
+2017-03-02 17:14:00.478 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:14:00.499 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:14:00.520 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:14:00.541 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:14:00.542 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:14:00.564 -05:00 [Information] The file "/css/typography.css" was not modified
+2017-03-02 17:14:00.564 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:14:00.585 -05:00 [Information] Request finished in 105.5712ms 304 text/css
+2017-03-02 17:14:00.586 -05:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-03-02 17:14:00.587 -05:00 [Information] Request finished in 107.6479ms 304 application/javascript
+2017-03-02 17:14:00.610 -05:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-03-02 17:14:00.610 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:14:00.611 -05:00 [Information] Request finished in 132.0762ms 304 application/javascript
+2017-03-02 17:14:00.631 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:14:00.652 -05:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-03-02 17:14:00.631 -05:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-03-02 17:14:00.673 -05:00 [Information] The file "/css/reset.css" was not modified
+2017-03-02 17:14:00.694 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:14:00.714 -05:00 [Information] The file "/css/screen.css" was not modified
+2017-03-02 17:14:00.715 -05:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-03-02 17:14:00.735 -05:00 [Information] Request finished in 236.8432ms 304 text/css
+2017-03-02 17:14:00.735 -05:00 [Information] Request finished in 83.0791ms 304 application/javascript
+2017-03-02 17:14:00.736 -05:00 [Information] Request finished in 214.4425ms 304 text/css
+2017-03-02 17:14:00.737 -05:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-03-02 17:14:00.780 -05:00 [Information] Request finished in 126.6315ms 304 application/javascript
+2017-03-02 17:14:00.780 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:14:00.801 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:14:00.801 -05:00 [Information] Request finished in 63.0307ms 304 application/javascript
+2017-03-02 17:14:00.822 -05:00 [Information] Request finished in 173.9371ms 304 application/javascript
+2017-03-02 17:14:00.833 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:14:00.841 -05:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-03-02 17:14:00.866 -05:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-03-02 17:14:00.887 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:14:00.911 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:14:00.911 -05:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-03-02 17:14:00.932 -05:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-03-02 17:14:00.932 -05:00 [Information] Request finished in 127.3535ms 304 application/javascript
+2017-03-02 17:14:00.953 -05:00 [Information] Request finished in 82.5169ms 304 application/javascript
+2017-03-02 17:14:00.953 -05:00 [Information] Request finished in 172.7617ms 304 application/javascript
+2017-03-02 17:14:00.957 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:14:00.983 -05:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-03-02 17:14:00.983 -05:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-03-02 17:14:01.003 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:14:01.023 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:14:01.044 -05:00 [Information] Request finished in 161.014ms 304 application/javascript
+2017-03-02 17:14:01.065 -05:00 [Information] The file "/lib/marked.js" was not modified
+2017-03-02 17:14:01.085 -05:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-03-02 17:14:01.086 -05:00 [Information] Request finished in 81.5185ms 304 application/javascript
+2017-03-02 17:14:01.086 -05:00 [Information] Request finished in 126.2453ms 304 application/javascript
+2017-03-02 17:14:01.089 -05:00 [Information] Request finished in 66.9515ms 304 application/javascript
+2017-03-02 17:14:01.093 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:14:01.094 -05:00 [Information] The file "/images/logo_small.png" was not modified
+2017-03-02 17:14:01.094 -05:00 [Information] Request finished in 117.3729ms 304 application/javascript
+2017-03-02 17:14:01.095 -05:00 [Information] Request finished in 1.6632ms 304 image/png
+2017-03-02 17:14:01.098 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:14:01.100 -05:00 [Information] The file "/css/print.css" was not modified
+2017-03-02 17:14:01.101 -05:00 [Information] Request finished in 2.0038ms 304 text/css
+2017-03-02 17:14:01.113 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:14:01.116 -05:00 [Error] Connection id ""0HL31N5KEFCPS"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types Demo.Core.Models.Address and Demo.Core.Dtos.Address. See config settings - "UseFullTypeNameInSchemaIds" or "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.<>c__DisplayClass17_0.<CreateObjectSchema>b__3(JsonProperty prop)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-03-02 17:14:01.117 -05:00 [Information] Request finished in 4.3765ms 200 
+2017-03-02 17:14:01.121 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:14:01.122 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:14:01.122 -05:00 [Information] Request finished in 2.0861ms 304 image/png
+2017-03-02 17:14:01.127 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:14:01.128 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:14:01.129 -05:00 [Information] Request finished in 2.2462ms 304 image/png
+2017-03-02 17:14:56.951 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 17:14:57.015 -05:00 [Information] Request finished in 92.9774ms 200 
+2017-03-02 17:14:57.472 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:14:57.780 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:14:57.802 -05:00 [Information] Request finished in 330.583ms 200 text/html
+2017-03-02 17:14:57.808 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:14:57.835 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:14:57.838 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:14:57.838 -05:00 [Information] The file "/css/typography.css" was not modified
+2017-03-02 17:14:57.862 -05:00 [Information] The file "/css/screen.css" was not modified
+2017-03-02 17:14:57.882 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:14:57.903 -05:00 [Information] The file "/css/reset.css" was not modified
+2017-03-02 17:14:57.903 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:14:57.924 -05:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-03-02 17:14:57.945 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:14:57.988 -05:00 [Information] Request finished in 137.2159ms 304 text/css
+2017-03-02 17:14:57.988 -05:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-03-02 17:14:58.009 -05:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-03-02 17:14:58.031 -05:00 [Information] Request finished in 152.0944ms 304 text/css
+2017-03-02 17:14:58.059 -05:00 [Information] Request finished in 107.0245ms 304 application/javascript
+2017-03-02 17:14:58.061 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:14:58.065 -05:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-03-02 17:14:58.091 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:14:58.091 -05:00 [Information] Request finished in 34.2261ms 304 application/javascript
+2017-03-02 17:14:58.092 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:14:58.135 -05:00 [Information] Request finished in 151.9332ms 304 text/css
+2017-03-02 17:14:58.135 -05:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-03-02 17:14:58.156 -05:00 [Information] Request finished in 126.8486ms 304 application/javascript
+2017-03-02 17:14:58.158 -05:00 [Information] Request finished in 170.9014ms 304 application/javascript
+2017-03-02 17:14:58.183 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:14:58.205 -05:00 [Information] Request finished in 92.1078ms 304 application/javascript
+2017-03-02 17:14:58.225 -05:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-03-02 17:14:58.248 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:14:58.248 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:14:58.271 -05:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-03-02 17:14:58.270 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:14:58.271 -05:00 [Information] Request finished in 156.4566ms 304 application/javascript
+2017-03-02 17:14:58.293 -05:00 [Information] Request finished in 134.8069ms 304 application/javascript
+2017-03-02 17:14:58.314 -05:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-03-02 17:14:58.315 -05:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-03-02 17:14:58.317 -05:00 [Information] Request finished in 131.7897ms 304 application/javascript
+2017-03-02 17:14:58.344 -05:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-03-02 17:14:58.367 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:14:58.367 -05:00 [Information] Request finished in 156.0923ms 304 application/javascript
+2017-03-02 17:14:58.389 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:14:58.390 -05:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-03-02 17:14:58.411 -05:00 [Information] Request finished in 97.0126ms 304 application/javascript
+2017-03-02 17:14:58.412 -05:00 [Information] The file "/lib/marked.js" was not modified
+2017-03-02 17:14:58.413 -05:00 [Information] Request finished in 67.9162ms 304 application/javascript
+2017-03-02 17:14:58.413 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:14:58.415 -05:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-03-02 17:14:58.416 -05:00 [Information] Request finished in 70.5736ms 304 application/javascript
+2017-03-02 17:14:58.424 -05:00 [Information] Request finished in 183.7614ms 304 application/javascript
+2017-03-02 17:14:58.424 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:14:58.426 -05:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-03-02 17:14:58.426 -05:00 [Information] Request finished in 176.9257ms 304 application/javascript
+2017-03-02 17:14:58.428 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:14:58.429 -05:00 [Information] The file "/images/logo_small.png" was not modified
+2017-03-02 17:14:58.430 -05:00 [Information] Request finished in 1.8414ms 304 image/png
+2017-03-02 17:14:58.433 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:14:58.434 -05:00 [Information] The file "/css/print.css" was not modified
+2017-03-02 17:14:58.435 -05:00 [Information] Request finished in 1.9887ms 304 text/css
+2017-03-02 17:14:58.535 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:14:58.545 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:14:58.546 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:14:58.547 -05:00 [Information] Request finished in 2.7793ms 304 image/png
+2017-03-02 17:14:58.554 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:14:58.554 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:14:58.555 -05:00 [Information] Request finished in 2.0491ms 304 image/png
+2017-03-02 17:14:58.638 -05:00 [Error] Connection id ""0HL31N67LUR5B"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types Demo.Core.Models.Address and Demo.Core.Dtos.Address. See config settings - "UseFullTypeNameInSchemaIds" or "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.<>c__DisplayClass17_0.<CreateObjectSchema>b__3(JsonProperty prop)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-03-02 17:14:58.647 -05:00 [Information] Request finished in 112.0335ms 200 
+2017-03-02 17:15:07.034 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:15:07.037 -05:00 [Error] Connection id ""0HL31N67LUR58"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Conflicting schemaIds: Identical schemaIds detected for types Demo.Core.Models.Address and Demo.Core.Dtos.Address. See config settings - "UseFullTypeNameInSchemaIds" or "CustomSchemaIds" for a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaIdManager.IdFor(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateReferenceSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateArraySchema(JsonArrayContract arrayContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.<>c__DisplayClass17_0.<CreateObjectSchema>b__3(JsonProperty prop)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateObjectSchema(JsonObjectContract jsonContract, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.CreateInlineSchema(Type type, Queue`1 referencedTypes)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRegistry.GetOrRegister(Type type)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponse(ApiResponseType apiResponseType, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateOperation(ApiDescription apiDescription, ISchemaRegistry schemaRegistry)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreatePathItem(IEnumerable`1 apiDescriptions, ISchemaRegistry schemaRegistry)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-03-02 17:15:07.038 -05:00 [Information] Request finished in 6.0915ms 200 
+2017-03-02 17:15:33.505 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:15:33.507 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 17:15:33.577 -05:00 [Information] Request finished in 101.3347ms 200 
+2017-03-02 17:15:33.882 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:15:33.904 -05:00 [Information] Request finished in 435.7279ms 200 text/html
+2017-03-02 17:15:33.910 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:15:33.936 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:15:33.938 -05:00 [Information] The file "/css/typography.css" was not modified
+2017-03-02 17:15:33.963 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:15:33.983 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:15:34.005 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:15:34.006 -05:00 [Information] The file "/css/reset.css" was not modified
+2017-03-02 17:15:34.027 -05:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-03-02 17:15:34.028 -05:00 [Information] The file "/css/screen.css" was not modified
+2017-03-02 17:15:34.049 -05:00 [Information] Request finished in 112.6576ms 304 text/css
+2017-03-02 17:15:34.050 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:15:34.070 -05:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-03-02 17:15:34.091 -05:00 [Information] Request finished in 92.5737ms 304 text/css
+2017-03-02 17:15:34.117 -05:00 [Information] Request finished in 65.4593ms 304 application/javascript
+2017-03-02 17:15:34.148 -05:00 [Information] Request finished in 29.3335ms 304 text/css
+2017-03-02 17:15:34.169 -05:00 [Information] Request finished in 155.7872ms 304 application/javascript
+2017-03-02 17:15:34.195 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:15:34.170 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:15:34.224 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:15:34.245 -05:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-03-02 17:15:34.266 -05:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-03-02 17:15:34.286 -05:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-03-02 17:15:34.307 -05:00 [Information] Request finished in 97.4ms 304 application/javascript
+2017-03-02 17:15:34.308 -05:00 [Information] Request finished in 323.7899ms 304 application/javascript
+2017-03-02 17:15:34.313 -05:00 [Information] Request finished in 174.5881ms 304 application/javascript
+2017-03-02 17:15:34.339 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:15:34.361 -05:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-03-02 17:15:34.361 -05:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-03-02 17:15:34.382 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:15:34.404 -05:00 [Information] Request finished in 213.8221ms 304 application/javascript
+2017-03-02 17:15:34.405 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:15:34.428 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:15:34.428 -05:00 [Information] Request finished in 47.8908ms 304 application/javascript
+2017-03-02 17:15:34.470 -05:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-03-02 17:15:34.471 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:15:34.471 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:15:34.491 -05:00 [Information] Request finished in 246.5648ms 304 application/javascript
+2017-03-02 17:15:34.492 -05:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-03-02 17:15:34.513 -05:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-03-02 17:15:34.514 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:15:34.514 -05:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-03-02 17:15:34.536 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:15:34.537 -05:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-03-02 17:15:34.537 -05:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-03-02 17:15:34.559 -05:00 [Information] Request finished in 85.9774ms 304 application/javascript
+2017-03-02 17:15:34.579 -05:00 [Information] Request finished in 220.7522ms 304 application/javascript
+2017-03-02 17:15:34.580 -05:00 [Information] Request finished in 200.6657ms 304 application/javascript
+2017-03-02 17:15:34.582 -05:00 [Information] Request finished in 297.3404ms 304 application/javascript
+2017-03-02 17:15:34.584 -05:00 [Information] Request finished in 65.1187ms 304 application/javascript
+2017-03-02 17:15:34.586 -05:00 [Information] The file "/lib/marked.js" was not modified
+2017-03-02 17:15:34.587 -05:00 [Information] Request finished in 136.884ms 304 application/javascript
+2017-03-02 17:15:34.593 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:15:34.594 -05:00 [Information] The file "/images/logo_small.png" was not modified
+2017-03-02 17:15:34.595 -05:00 [Information] Request finished in 2.2447ms 304 image/png
+2017-03-02 17:15:34.597 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:15:34.598 -05:00 [Information] The file "/css/print.css" was not modified
+2017-03-02 17:15:34.599 -05:00 [Information] Request finished in 1.7466ms 304 text/css
+2017-03-02 17:15:34.697 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:15:34.708 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:15:34.709 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:15:34.710 -05:00 [Information] Request finished in 3.3801ms 304 image/png
+2017-03-02 17:15:34.715 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:15:34.716 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:15:34.717 -05:00 [Information] Request finished in 2.8847ms 304 image/png
+2017-03-02 17:15:34.875 -05:00 [Information] Request finished in 178.1283ms 200 application/json
+2017-03-02 17:17:40.620 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:8088/  0
+2017-03-02 17:17:40.687 -05:00 [Information] Request finished in 96.4356ms 200 
+2017-03-02 17:17:43.470 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:17:43.725 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:17:43.746 -05:00 [Information] Request finished in 276.9091ms 200 text/html
+2017-03-02 17:17:43.754 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:17:43.765 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:17:43.793 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:17:43.814 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:17:43.815 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:17:43.836 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:17:43.857 -05:00 [Information] The file "/css/typography.css" was not modified
+2017-03-02 17:17:43.857 -05:00 [Information] The file "/css/reset.css" was not modified
+2017-03-02 17:17:43.877 -05:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-03-02 17:17:43.877 -05:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-03-02 17:17:43.878 -05:00 [Information] The file "/css/screen.css" was not modified
+2017-03-02 17:17:43.878 -05:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-03-02 17:17:43.901 -05:00 [Information] Request finished in 125.1306ms 304 text/css
+2017-03-02 17:17:43.921 -05:00 [Information] Request finished in 139.276ms 304 text/css
+2017-03-02 17:17:43.922 -05:00 [Information] Request finished in 106.6009ms 304 application/javascript
+2017-03-02 17:17:43.925 -05:00 [Information] Request finished in 106.6148ms 304 application/javascript
+2017-03-02 17:17:43.951 -05:00 [Information] Request finished in 86.0072ms 304 text/css
+2017-03-02 17:17:43.974 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:17:43.994 -05:00 [Information] Request finished in 118.5585ms 304 application/javascript
+2017-03-02 17:17:43.995 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:17:44.015 -05:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-03-02 17:17:44.044 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:17:44.044 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:17:44.065 -05:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-03-02 17:17:44.066 -05:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-03-02 17:17:44.087 -05:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-03-02 17:17:44.108 -05:00 [Information] Request finished in 86.9017ms 304 application/javascript
+2017-03-02 17:17:44.109 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:17:44.110 -05:00 [Information] Request finished in 71.8155ms 304 application/javascript
+2017-03-02 17:17:44.133 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:17:44.154 -05:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-03-02 17:17:44.175 -05:00 [Information] Request finished in 137.6082ms 304 application/javascript
+2017-03-02 17:17:44.196 -05:00 [Information] Request finished in 138.3244ms 304 application/javascript
+2017-03-02 17:17:44.200 -05:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-03-02 17:17:44.222 -05:00 [Information] Request finished in 249.0772ms 304 application/javascript
+2017-03-02 17:17:44.244 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:17:44.265 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:17:44.290 -05:00 [Information] Request finished in 135.7841ms 304 application/javascript
+2017-03-02 17:17:44.291 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:17:44.316 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:17:44.317 -05:00 [Information] The file "/lib/marked.js" was not modified
+2017-03-02 17:17:44.338 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:17:44.338 -05:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-03-02 17:17:44.338 -05:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-03-02 17:17:44.359 -05:00 [Information] Request finished in 205.3179ms 304 application/javascript
+2017-03-02 17:17:44.380 -05:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-03-02 17:17:44.401 -05:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-03-02 17:17:44.402 -05:00 [Information] Request finished in 94.1879ms 304 application/javascript
+2017-03-02 17:17:44.402 -05:00 [Information] Request finished in 179.0805ms 304 application/javascript
+2017-03-02 17:17:44.404 -05:00 [Information] Request finished in 269.3186ms 304 application/javascript
+2017-03-02 17:17:44.407 -05:00 [Information] Request finished in 48.1528ms 304 application/javascript
+2017-03-02 17:17:44.411 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:17:44.412 -05:00 [Information] The file "/images/logo_small.png" was not modified
+2017-03-02 17:17:44.413 -05:00 [Information] Request finished in 2.3172ms 304 image/png
+2017-03-02 17:17:44.416 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:17:44.417 -05:00 [Information] The file "/css/print.css" was not modified
+2017-03-02 17:17:44.418 -05:00 [Information] Request finished in 1.8112ms 304 text/css
+2017-03-02 17:17:44.483 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:17:44.496 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:17:44.497 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:17:44.498 -05:00 [Information] Request finished in 2.8971ms 304 image/png
+2017-03-02 17:17:44.503 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:17:44.504 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:17:44.505 -05:00 [Information] Request finished in 1.7236ms 304 image/png
+2017-03-02 17:17:44.663 -05:00 [Information] Request finished in 178.356ms 200 application/json
+2017-03-02 17:17:50.054 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/throbber.gif  
+2017-03-02 17:17:50.055 -05:00 [Information] The file "/images/throbber.gif" was not modified
+2017-03-02 17:17:50.055 -05:00 [Information] Request finished in 1.2528ms 304 image/gif
+2017-03-02 17:17:50.067 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:17:50.067 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:17:50.068 -05:00 [Information] Request finished in 1.6217ms 304 image/png
+2017-03-02 17:17:50.072 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:17:50.073 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:17:50.073 -05:00 [Information] Request finished in 1.8361ms 304 image/png
+2017-03-02 17:22:34.125 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/  
+2017-03-02 17:22:34.425 -05:00 [Information] Sending file. Request path: '"/index.html"'. Physical path: '"N/A"'
+2017-03-02 17:22:34.481 -05:00 [Information] Request finished in 383.4092ms 200 text/html
+2017-03-02 17:22:34.484 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/reset.css  
+2017-03-02 17:22:34.490 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/screen.css  
+2017-03-02 17:22:34.490 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/object-assign-pollyfill.js  
+2017-03-02 17:22:34.536 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery-1.8.0.min.js  
+2017-03-02 17:22:34.536 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.slideto.min.js  
+2017-03-02 17:22:34.557 -05:00 [Information] The file "/css/reset.css" was not modified
+2017-03-02 17:22:34.557 -05:00 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2017-03-02 17:22:34.557 -05:00 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2017-03-02 17:22:34.557 -05:00 [Information] The file "/css/screen.css" was not modified
+2017-03-02 17:22:34.557 -05:00 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2017-03-02 17:22:34.559 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/typography.css  
+2017-03-02 17:22:34.579 -05:00 [Information] Request finished in 70.9972ms 304 text/css
+2017-03-02 17:22:34.600 -05:00 [Information] Request finished in 43.7125ms 304 application/javascript
+2017-03-02 17:22:34.601 -05:00 [Information] Request finished in 75.9534ms 304 text/css
+2017-03-02 17:22:34.602 -05:00 [Information] The file "/css/typography.css" was not modified
+2017-03-02 17:22:34.622 -05:00 [Information] Request finished in 69.9159ms 304 application/javascript
+2017-03-02 17:22:34.622 -05:00 [Information] Request finished in 44.1108ms 304 text/css
+2017-03-02 17:22:34.623 -05:00 [Information] Request finished in 64.0237ms 304 application/javascript
+2017-03-02 17:22:34.661 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/lodash.min.js  
+2017-03-02 17:22:34.664 -05:00 [Information] The file "/lib/lodash.min.js" was not modified
+2017-03-02 17:22:34.687 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.wiggle.min.js  
+2017-03-02 17:22:34.688 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/backbone-min.js  
+2017-03-02 17:22:34.710 -05:00 [Information] Request finished in 32.6445ms 304 application/javascript
+2017-03-02 17:22:34.710 -05:00 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2017-03-02 17:22:34.711 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/handlebars-4.0.5.js  
+2017-03-02 17:22:34.734 -05:00 [Information] Request finished in 54.9572ms 304 application/javascript
+2017-03-02 17:22:34.735 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jquery.ba-bbq.min.js  
+2017-03-02 17:22:34.757 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack.js  
+2017-03-02 17:22:34.758 -05:00 [Information] The file "/lib/backbone-min.js" was not modified
+2017-03-02 17:22:34.779 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/swagger-ui.min.js  
+2017-03-02 17:22:34.786 -05:00 [Information] The file "/swagger-ui.min.js" was not modified
+2017-03-02 17:22:34.788 -05:00 [Information] Request finished in 130.6018ms 304 application/javascript
+2017-03-02 17:22:34.793 -05:00 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2017-03-02 17:22:34.814 -05:00 [Information] Request finished in 59.418ms 304 application/javascript
+2017-03-02 17:22:34.815 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/jsoneditor.min.js  
+2017-03-02 17:22:34.815 -05:00 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2017-03-02 17:22:34.835 -05:00 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2017-03-02 17:22:34.835 -05:00 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2017-03-02 17:22:34.856 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/highlight.9.1.0.pack_extended.js  
+2017-03-02 17:22:34.856 -05:00 [Information] Request finished in 202.3607ms 304 application/javascript
+2017-03-02 17:22:34.877 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/marked.js  
+2017-03-02 17:22:34.877 -05:00 [Information] Request finished in 180.3817ms 304 application/javascript
+2017-03-02 17:22:34.903 -05:00 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2017-03-02 17:22:34.903 -05:00 [Information] Request finished in 43.8178ms 304 application/javascript
+2017-03-02 17:22:34.931 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/lib/swagger-oauth.js  
+2017-03-02 17:22:34.932 -05:00 [Information] Request finished in 146.0116ms 304 application/javascript
+2017-03-02 17:22:34.952 -05:00 [Information] Request finished in 124.2694ms 304 application/javascript
+2017-03-02 17:22:34.952 -05:00 [Information] The file "/lib/marked.js" was not modified
+2017-03-02 17:22:34.973 -05:00 [Information] The file "/lib/swagger-oauth.js" was not modified
+2017-03-02 17:22:34.993 -05:00 [Information] Request finished in 117.6425ms 304 application/javascript
+2017-03-02 17:22:34.995 -05:00 [Information] Request finished in 70.8624ms 304 application/javascript
+2017-03-02 17:22:35.002 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/logo_small.png  
+2017-03-02 17:22:35.003 -05:00 [Information] The file "/images/logo_small.png" was not modified
+2017-03-02 17:22:35.004 -05:00 [Information] Request finished in 3.3196ms 304 image/png
+2017-03-02 17:22:35.008 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/css/print.css  
+2017-03-02 17:22:35.010 -05:00 [Information] The file "/css/print.css" was not modified
+2017-03-02 17:22:35.013 -05:00 [Information] Request finished in 3.4265ms 304 text/css
+2017-03-02 17:22:35.070 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/v1/swagger.json  
+2017-03-02 17:22:35.080 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-16x16.png  
+2017-03-02 17:22:35.081 -05:00 [Information] The file "/images/favicon-16x16.png" was not modified
+2017-03-02 17:22:35.082 -05:00 [Information] Request finished in 2.1382ms 304 image/png
+2017-03-02 17:22:35.086 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/favicon-32x32.png  
+2017-03-02 17:22:35.087 -05:00 [Information] The file "/images/favicon-32x32.png" was not modified
+2017-03-02 17:22:35.087 -05:00 [Information] Request finished in 1.5088ms 304 image/png
+2017-03-02 17:22:35.253 -05:00 [Information] Request finished in 182.5626ms 200 application/json
+2017-03-02 17:22:35.482 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:8088/swagger/images/throbber.gif  
+2017-03-02 17:22:35.483 -05:00 [Information] The file "/images/throbber.gif" was not modified
+2017-03-02 17:22:35.484 -05:00 [Information] Request finished in 2.299ms 304 image/gif

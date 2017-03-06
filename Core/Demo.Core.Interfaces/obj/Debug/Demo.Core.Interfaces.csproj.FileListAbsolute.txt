@@ -1,0 +1,7 @@
+C:\Projects\Demo\Core\Demo.Core.Interfaces\bin\Debug\Demo.Core.Interfaces.dll
+C:\Projects\Demo\Core\Demo.Core.Interfaces\bin\Debug\Demo.Core.Interfaces.pdb
+C:\Projects\Demo\Core\Demo.Core.Interfaces\obj\Debug\Demo.Core.Interfaces.csprojResolveAssemblyReference.cache
+C:\Projects\Demo\Core\Demo.Core.Interfaces\obj\Debug\Demo.Core.Interfaces.dll
+C:\Projects\Demo\Core\Demo.Core.Interfaces\obj\Debug\Demo.Core.Interfaces.pdb
+C:\Projects\Demo\Core\Demo.Core.Interfaces\bin\Debug\Demo.Core.Models.dll
+C:\Projects\Demo\Core\Demo.Core.Interfaces\bin\Debug\Demo.Core.Models.pdb

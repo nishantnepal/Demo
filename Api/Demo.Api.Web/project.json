@@ -1,0 +1,62 @@
+{
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc": "1.0.1",
+    "Microsoft.AspNetCore.Routing": "1.0.1",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "Microsoft.Extensions.Logging": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+    "AutoMapper.Extensions.Microsoft.DependencyInjection": "1.2.0",
+    "Serilog": "2.4.0",
+    "Serilog.Extensions.Logging": "1.4.0",
+    "Serilog.Sinks.RollingFile": "3.3.0",
+    "Serilog.Exceptions": "2.4.0",
+    "Swashbuckle.AspNetCore": "1.0.0-rc3"
+  },
+
+  "tools": {
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
+  },
+
+  "frameworks": {
+    "net452": {
+      "dependencies": {
+        "Demo.Core.Dtos": {
+          "target": "project"
+        },
+        "Demo.Core.Interfaces": {
+          "target": "project"
+        },
+        "Demo.Core.Models": {
+          "target": "project"
+        },
+        "Demo.Core.Services": {
+          "target": "project"
+        }
+      }
+    }
+  },
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+
+  "publishOptions": {
+    "include": [
+      "wwwroot",
+      "**/*.cshtml",
+      "appsettings.json",
+      "web.config"
+    ]
+  },
+
+  "scripts": {
+    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+  }
+}

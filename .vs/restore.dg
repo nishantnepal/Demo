@@ -1,0 +1,11 @@
+#:C:\Projects\Demo\Api\Demo.Api.Web\Demo.Api.Web.xproj
+C:\Projects\Demo\Api\Demo.Api.Web\Demo.Api.Web.xproj|C:\Projects\Demo\Core\Demo.Core.Dtos\Demo.Core.Dtos.csproj
+C:\Projects\Demo\Api\Demo.Api.Web\Demo.Api.Web.xproj|C:\Projects\Demo\Core\Demo.Core.Interfaces\Demo.Core.Interfaces.csproj
+C:\Projects\Demo\Api\Demo.Api.Web\Demo.Api.Web.xproj|C:\Projects\Demo\Core\Demo.Core.Models\Demo.Core.Models.csproj
+C:\Projects\Demo\Api\Demo.Api.Web\Demo.Api.Web.xproj|C:\Projects\Demo\Core\Demo.Core.Services\Demo.Core.Services.csproj
+C:\Projects\Demo\Core\Demo.Core.Interfaces\Demo.Core.Interfaces.csproj|C:\Projects\Demo\Core\Demo.Core.Models\Demo.Core.Models.csproj
+C:\Projects\Demo\Core\Demo.Core.Services\Demo.Core.Services.csproj|C:\Projects\Demo\Core\Demo.Core.Interfaces\Demo.Core.Interfaces.csproj
+C:\Projects\Demo\Core\Demo.Core.Services\Demo.Core.Services.csproj|C:\Projects\Demo\Core\Demo.Core.Models\Demo.Core.Models.csproj
+C:\Projects\Demo\Core\Demo.Core.Services\Demo.Core.Services.csproj|C:\Projects\Demo\Core\Demo.Core.Repositories\Demo.Core.DataAccess.csproj
+C:\Projects\Demo\Core\Demo.Core.Repositories\Demo.Core.DataAccess.csproj|C:\Projects\Demo\Core\Demo.Core.Interfaces\Demo.Core.Interfaces.csproj
+C:\Projects\Demo\Core\Demo.Core.Repositories\Demo.Core.DataAccess.csproj|C:\Projects\Demo\Core\Demo.Core.Models\Demo.Core.Models.csproj

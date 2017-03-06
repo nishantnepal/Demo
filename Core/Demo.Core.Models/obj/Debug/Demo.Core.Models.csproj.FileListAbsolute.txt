@@ -1,0 +1,4 @@
+C:\Projects\Demo\Core\Demo.Core.Models\bin\Debug\Demo.Core.Models.dll
+C:\Projects\Demo\Core\Demo.Core.Models\bin\Debug\Demo.Core.Models.pdb
+C:\Projects\Demo\Core\Demo.Core.Models\obj\Debug\Demo.Core.Models.dll
+C:\Projects\Demo\Core\Demo.Core.Models\obj\Debug\Demo.Core.Models.pdb

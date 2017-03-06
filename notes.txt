@@ -1,0 +1,33 @@
+injecting db context into service layer
+http://stackoverflow.com/questions/41058142/injecting-dbcontext-into-service-layer
+
+get customer api working with CRUD  - done (pending tests for controllers and services)
+add automapper to services  - done
+logging all the way through including ef queries  - serilog   done
+
+get orders working - adding,removing orders etc   done
+add swagger   done
+
+get domain events
+save domain events to azure service bus - or save to DB and have hangfire push to service bus
+
+get identity server setup
+	sso
+	only admin can see all customers
+	login logoff
+
+what about ssl?
+
+
+UI - react
+
+todos
+
+DTo must have a property called ObjectState which is UnChanged,Modified,Added,Deleted. This should then map to the entity framework state when saving a graph.
+
+why do we need services - its a rest api - REPLACE services with webapi controllers   - orderscontroller does not use service, but the controller can get long - maybe
+create an OrderHandler when requiered?
+
+if supporting partial updates - then have to figure out how to map only non nullable fields in automapper and for the nullable fields take the existing values.
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/handling-concurrency-with-the-entity-framework-in-an-asp-net-mvc-application
+
